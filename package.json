@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A NPM library to convert numbers to plain text. You may neet it at any time.",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
