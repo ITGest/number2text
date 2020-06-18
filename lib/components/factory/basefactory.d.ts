@@ -1,4 +1,4 @@
 export declare abstract class BaseFactory {
-  abstract build(child: BaseFactory): BaseFactory;
-  abstract getString(): string;
+    abstract build(child: BaseFactory): BaseFactory;
+    abstract getString(): string;
 }

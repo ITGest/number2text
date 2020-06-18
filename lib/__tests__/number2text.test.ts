@@ -122,7 +122,12 @@ test('TEST MIL', async() => {
 test('TEST DOIS MIL', async () => {
   expect(NumberToString(1000)).toBe('MIL');
 });*/
+/*
 
 test('TEST DEZ MILHÕES', async () => {
   expect(NumberToString(10000000)).toBe('DEZ MILHÕES');
+});*/
+
+test('TESTING CENTS', async () => {
+  expect(NumberToString(0.34)).toBe('TRINTA E QUATRO CENTAVOS');
 });
