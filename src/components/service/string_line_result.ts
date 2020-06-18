@@ -1,6 +1,6 @@
 import { BaseFactory } from '../factory/basefactory';
 
-///THIS CLASS EXTENDS BEHAVIORS FROM BASEFACTORY
+/// THIS CLASS EXTENDS BEHAVIORS FROM BASEFACTORY
 /// AND EXCUTES OTHER COMPONENTS
 export class StringLineResult extends BaseFactory {
   private _children = Array<BaseFactory>();

@@ -1,6 +1,6 @@
 import { BaseFactory } from '../factory/basefactory';
 
-///THIS CLASS EXTENDS BEHAVIORS FROM BASEFACTORY
+/// THIS CLASS EXTENDS BEHAVIORS FROM BASEFACTORY
 export class Cents extends BaseFactory {
   private _stringNumber: string = '';
   constructor(private _value: number, private _template: string) {

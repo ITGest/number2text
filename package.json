@@ -1,7 +1,7 @@
 {
   "name": "number2text",
   "version": "1.0.0",
-  "description": "A NPM library to convert numbers to plain text. You may use it in many situations.",
+  "description": "A NPM library to convert numbers to plain text. You may neet it at any time.",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CoderAware/number2text_ts.git"
+    "url": "git+https://github.com:ITGest/number2text.git"
   },
   "keywords": ["Convert to Text","Number to text", "Have number to text"],
   "author": "Adelino Safeca",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CoderAware/number2text_ts/issues"
+    "url": "https://github.com/ITGest/number2text/issues"
   },
-  "homepage": "https://github.com/CoderAware/number2text_ts#readme",
+  "homepage": "https://github.com/ITGest/number2text/issues#readme",
   "devDependencies": {
     "@types/jest": "^26.0.0",
     "jest": "^26.0.1",

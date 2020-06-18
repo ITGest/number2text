@@ -1,5 +1,5 @@
 import { BaseFactory } from '../factory/basefactory';
-///THIS CLASS EXTENDS BEHAVIORS FROM BASEFACTORY
+/// THIS CLASS EXTENDS BEHAVIORS FROM BASEFACTORY
 export class Trillion extends BaseFactory {
   private _stringnumber: string = '';
   constructor(private value: number, private _template: string) {

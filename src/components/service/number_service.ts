@@ -10,12 +10,12 @@ import { Hundreds } from '../numbers/hundreds';
 export class NumberService {
   private static _instance: NumberService;
 
-  ///DECLARE OUR TEMPLATE TO KNOW AND CONTROL THE 
+  /// DECLARE OUR TEMPLATE TO KNOW AND CONTROL THE
   /// THE NUMBER LENGTH
   private _template: string = '';
 
-  ///StringLineResult IS THE COMPONENT ACTING LIKE A CONTAINER
-  ///WE CAN ADD COMPONENTS INSIDE IT
+  /// StringLineResult IS THE COMPONENT ACTING LIKE A CONTAINER
+  /// WE CAN ADD COMPONENTS INSIDE IT
   stringLineResult = StringLineResult.getInstance();
   static getInstance(): NumberService {
     if (!NumberService._instance) {
@@ -24,16 +24,15 @@ export class NumberService {
     return NumberService._instance;
   }
   numberWatching(value: number): string {
-
-    ///FILLING THE TEMPLATE, THE MAXIMUM IS 18. 15 FOR 
-    ///INTEGERS AND 3 FOR DECIMAL
+    /// FILLING THE TEMPLATE, THE MAXIMUM IS 18. 15 FOR
+    /// INTEGERS AND 3 FOR DECIMAL
     for (let x = 0; x < 18 - value.toFixed(2).length; x++) {
       this._template += '0';
     }
     this._template += value.toFixed(2).replace('.', '0');
 
-    ///ALL THE NUMBERS ARE REPRESENTED AS A CLASS COMPONENT
-    ///THEY BELONG TO BASEFACTORY CLASS
+    /// ALL THE NUMBERS ARE REPRESENTED AS A CLASS COMPONENT
+    /// THEY BELONG TO BASEFACTORY CLASS
 
     for (let k = 0; k <= 15; k += 3) {
       const _currentValue: string = this._template[k] + this._template[k + 1] + this._template[k + 2];
@@ -67,12 +66,12 @@ export class NumberService {
       }
     }
 
-    ///LET'S AVOID PRESENTING => UM MIL WHEN WE HAVE A  THOUSAND
+    /// LET'S AVOID PRESENTING => UM MIL WHEN WE HAVE A  THOUSAND
     let _data = this.stringLineResult.getString();
-    const _repeated= _data.includes('UM') && _data.includes('MIL');
-    if(_repeated){
-      _data=_data.substring(3,);
+    const _repeated = _data.includes('UM') && _data.includes('MIL');
+    if (_repeated) {
+      _data = _data.substring(3);
     }
-    return _data
+    return _data;
   }
 }

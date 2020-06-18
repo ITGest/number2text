@@ -118,6 +118,11 @@ test('TEST MIL', async() => {
 });
 */
 
+/*
 test('TEST DOIS MIL', async () => {
   expect(NumberToString(1000)).toBe('MIL');
+});*/
+
+test('TEST DEZ MILHÕES', async () => {
+  expect(NumberToString(10000000)).toBe('DEZ MILHÕES');
 });
