@@ -1,6 +1,6 @@
 {
-  "name": "number2text",
-  "version": "1.0.0",
+  "name": "nutext",
+  "version": "0.0.1",
   "description": "A NPM library to convert numbers to plain text. You may neet it at any time.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
