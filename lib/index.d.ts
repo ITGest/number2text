@@ -1,1 +1,1 @@
-export declare function NumberToString(value: number): string;
+export declare function getText(value: number): string;
