@@ -1,5 +1,5 @@
 {
-  "name": "nutext",
+  "name": "textfy",
   "version": "0.0.1",
   "description": "A NPM library to convert numbers to plain text. You may neet it at any time.",
   "main": "lib/index.js",
