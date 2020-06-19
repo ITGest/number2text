@@ -127,7 +127,17 @@ test('TEST DOIS MIL', async () => {
 test('TEST DEZ MILHÕES', async () => {
   expect(getText(10000000)).toBe('DEZ MILHÕES');
 });*/
-
+/*
 test('TESTING CENTS', async () => {
   expect(getText(0.34)).toBe('TRINTA E QUATRO CENTAVOS');
+});
+*/
+/*
+test('TESTING MILLION', async () => {
+  expect(getText(1000000)).toBe('UM MILHÃO');
+});
+*/
+
+test('TESTING BILLION', async () => {
+  expect(getText(1200000000)).toBe('UM BILHÃO E DUZENTOS MILHÕES');
 });

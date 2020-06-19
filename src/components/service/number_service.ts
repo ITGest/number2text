@@ -68,10 +68,14 @@ export class NumberService {
 
     /// LET'S AVOID PRESENTING => UM MIL WHEN WE HAVE A  THOUSAND
     let _data = this.stringLineResult.getString();
-    const _repeated = _data.includes('UM') && _data.includes('MIL');
-    if (_repeated) {
-      _data = _data.substring(3);
+
+    if (!_data.includes('MILHÃO') && !_data.includes('TRILHÃO') && !_data.includes('BILHÃO')) {
+      const _repeated = _data.includes('UM') && _data.includes('MIL');
+      if (_repeated) {
+        _data = _data.substring(3);
+      }
     }
+
     return _data;
   }
 }

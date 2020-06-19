@@ -19,9 +19,9 @@ export class Billion extends BaseFactory {
       Number.parseFloat(this._template[13]) +
       Number.parseFloat(this._template[14]);
     if (this._value === 1) {
-      this._stringNumber = ' BILHÃO' + (_next > 0 ? ' E' : '');
+      this._stringNumber = ' BILHÃO' + (_next > 0 ? ' E ' : '');
     } else if (this._value > 1) {
-      this._stringNumber = ' BILHÕES' + (_next > 0 ? ' E' : '');
+      this._stringNumber = ' BILHÕES' + (_next > 0 ? ' E ' : '');
     }
     return this;
   }
