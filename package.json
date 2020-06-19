@@ -1,6 +1,6 @@
 {
   "name": "textfy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A NPM library to convert numbers to plain text. You may neet it at any time.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -9,17 +9,21 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"lib/**/*.js\" \"lib/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com:ITGest/number2text.git"
   },
-  "keywords": ["Convert to Text","Number to text", "Have number to text"],
+  "keywords": [
+    "Convert to Text",
+    "Number to text",
+    "Have number to text"
+  ],
   "author": "Adelino Safeca",
   "license": "ISC",
   "bugs": {
